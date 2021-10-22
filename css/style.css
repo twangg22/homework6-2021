@@ -179,11 +179,13 @@ body{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      overflow: visible;
       background: #fff;
       border-bottom: 3px solid #50C7C7;
       position: sticky;
       top: 0;
+      bottom: 0;
+      left: 0;
 
     }
 
