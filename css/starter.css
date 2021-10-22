@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16pt; /* test for this! Make all sizes em or rem */
+    font-family: "Alegreya Sans SC", serif;
+    background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+  }
+  
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+    border-bottom: 3px solid #50C7C7;
+  }
+  
+  h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  p {
+    padding: 0 30px;
+  }
+  
+  @keyframes mymove {
+    from {width: 50px; opacity: 0;}
+    to{width: 425px; opacity: 1;}
+    
+  }
+  #logo {
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+  }
+
+  a:visited{
+    color:blue;
+  }
+
+
+  a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+  
+  *:focus{
+    border: 2px solid black;
+  }
+
+  .nav_links{
+    flex: auto;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+  
+  .nav_item a:hover, a:focus{
+    color: #50C7C7;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+
+  .pricing{
+    min-height: 475px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 25px 0;
+
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    flex-basis: 450px;
+  }
+
+  .card > ul{
+    list-style: none;
+    padding-left: 5px;
+  }
+  
+  .card > ul li {
+    width: 90%;
+    margin: 20px auto;
+    
+  }
+
+.card button{
+    width: 90%;
+    height: 40px;
+    border: 0;
+    margin-left: 5%;
+    border-radius: 7px;
+    background: #288080;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .card h3{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+
+  }
+  
+  .card header{
+    background-color: #288088;
+    border: 2px solid #45adad;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+  }
+
+  .card_big{
+    -webkit-transform: initial;
+            transform: initial;
+  }
+
+  .gallery{
+    min-height: 600px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .gallery img{
+    border: 10px solid #50c7c7;
+    margin: 10px;
+    width: 300px;
+  }
+
+  footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 850px){
+    header{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      border-bottom: 3px solid #50C7C7;
+      position: sticky;
+      top: 0;
+
+    }
+
+    .nav_links{
+    display: flex;
+    }
+
+    .card {
+      margin: 12px;
+      background: #fff;
+      border-radius: 7px;
+      padding: 0 0 25px 0;
+  
+      display: flex;
+      justify-content: center; 
+      flex-direction: column; 
+      flex-basis: 250px;
+
+      -webkit-transform: initial;
+      transform: initial;
+      z-index: -99;
+    }
+
+
+    .card_big{
+        -webkit-transform: scaleY(1.1);
+        transform: scaleY(1.1);
+        z-index: -99;
+  }
+}
+  
